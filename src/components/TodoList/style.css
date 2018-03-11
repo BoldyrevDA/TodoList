@@ -1,0 +1,124 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+    /* margin: 0px auto; */
+  }
+
+  th, td {
+    border: solid 2px #000;
+    padding: 10px;
+  }
+
+  .table_header{
+    background-color: #bbb;
+  }
+
+  .odd_color{
+    background-color: #ddd;
+  }
+
+  /*---------------------------------- addTodo ------------------------------------*/
+
+  .btn {
+    background-color: #e5e5e5;
+    border: solid 1px #000;
+    color: #000;
+    padding: 3px 25px;
+    text-align: center;
+    display: block;
+    font-size: 19px;
+    border-radius: 3px;
+  }
+
+  .right{
+    float: right;
+  }
+
+  .btn:hover{
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  
+  .btn:active {
+    background-color: #bbb;
+  }
+
+
+  /*---------------------------------- search ------------------------------------*/
+
+  .search {
+    width: 50%;
+    position: relative;
+  }
+  
+  .search input, .submit {
+    border: none;
+    transition: width .5s ease;
+  }
+
+  .search input:focus{
+    width: 100%;
+    
+  }
+  
+  /* стили для поля ввода */
+  .search .input {
+    /* растягиваем поле ввода на всю ширину формы */
+    width: 70%;
+  
+    /* за счет верхнего (8px) и нижнего (9px) внутренних отступов
+    ** регулируем высоту формы
+    ** внутренний отступ справа (37px) делаем больше левого,
+    ** т.к. там будет размещена кнопка отправки	*/
+    padding: 8px 15px 9px 37px;
+  
+    /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  
+    /* добавляем внутренние тени */
+    box-shadow: inset 0 0 3px #000;
+  
+    /* закругляем углы */
+    border-radius: 20px;
+
+    font: 14px Tahoma, Arial, sans-serif;
+    color: #555;
+    outline: none;
+  }
+  
+  /* меняем оформление поля ввода при фокусе */
+  .search .input:focus {
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2), inset 0 1px 2px rgba(0,0,0,0.4);
+    background: #fafafa;
+    color: #222;
+  }
+  
+  /* оформляем кнопку отправки */
+  .search .submit {
+    /* позиционируем кнопку абсолютно от правого края формы */
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    width: 37px;
+    /* растягиваем кнопку на всю высоту формы */
+    height: 100%;
+  
+    cursor: pointer;
+    background: rgba(1, 1, 1, 0);
+    /* добавляем прозрачность кнопке отправки */
+    opacity: 0.6;
+  }
+  
+  /* при наведении курсора меняем прозрачность кнопки отправки */
+  .search .submit:hover {
+    opacity: 0.9;
+  }
+
+    @media (min-width: 768px) {
+    .search {
+      width: 30%;
+  }
+}

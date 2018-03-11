@@ -1,0 +1,52 @@
+.td_center {
+  text-align: center;
+}
+
+.fa-trash{
+  font-size: 22px;
+}
+
+.checkbox{
+  display: inline-block;
+}
+
+input[type=checkbox], input[type=radio] {display: none;}
+
+input[type=checkbox] + label:before {
+    content: "\2713";
+    color: transparent;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 2px;
+    line-height: 20px;
+    /* margin: -5px 5px 0 0; */
+    height: 16px;
+    width: 16px;
+    /* text-align: center; */
+    vertical-align: middle;
+    transition: color ease .2s;
+}
+
+input[type=checkbox]:checked + label:before {
+    color: #000;
+}
+
+input[type=radio] + label:before {
+    content: "\26AB";
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid #000;
+    font-size: 16px;    
+    line-height: 16px;
+    margin: -5px 5px 0 0;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0;    
+    transition: font-size ease .2s;
+}
+input[type=radio]:checked + label:before {
+    font-size: 20px;    
+}
