@@ -61,12 +61,11 @@ class App extends Component {
     return (
       <div className="container">
         <h1>ToDo List</h1>
-        <button key="addTodo" className="btn right" onClick={this.openModal}>
+        <button className="btn right" onClick={this.openModal}>
           Add todo
         </button>
 
         <form
-          key="filter"
           action=""
           method="get"
           className="search"
@@ -90,7 +89,6 @@ class App extends Component {
         />
 
         <Modal
-          key="modal"
           isOpen={this.state.modalIsOpen}
           handleClickSave={this.addItem}
           handleClickCancel={() => this.setState({ modalIsOpen: false })}
