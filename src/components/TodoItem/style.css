@@ -36,11 +36,9 @@ input[type="checkbox"]:checked + label:before {
 
 input[type="radio"] + label:before {
   content: "\26AB";
-  border: 1px solid #000;
   border-radius: 50%;
   display: inline-block;
   border: 1px solid #000;
-  font-size: 16px;
   line-height: 16px;
   margin: -5px 5px 0 0;
   height: 20px;

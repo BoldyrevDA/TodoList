@@ -10,6 +10,13 @@ class TodoItem extends PureComponent {
     };
   }
 
+  check = () => {
+    this.props.item.isDone = !this.props.item.isDone;
+    this.setState({
+      isDone: !this.state.isDone
+    });
+  };
+
   render() {
     return [
       <td key="title">{this.props.item.title}</td>,
@@ -30,13 +37,6 @@ class TodoItem extends PureComponent {
       </td>
     ];
   }
-
-  check = () => {
-    this.props.item.isDone = !this.props.item.isDone;
-    this.setState({
-      isDone: !this.state.isDone
-    });
-  };
 }
 
 export default TodoItem;
